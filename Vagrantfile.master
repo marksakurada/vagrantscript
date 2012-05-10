@@ -1,0 +1,33 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant::Config.run do |config|
+  config.nfs.map_gid = :auto
+  config.nfs.map_uid = :auto
+  config.package.name = "package.box"
+  config.ssh.username = "vagrant"
+  config.ssh.host = "127.0.0.1"
+  config.ssh.port = nil
+  config.ssh.guest_port = 22
+  config.ssh.max_tries = 100
+  config.ssh.timeout = 10
+  config.ssh.private_key_path = nil
+  config.ssh.forward_agent = false
+  config.ssh.forward_x11 = 
+  config.ssh.shell
+  config.vagrant.dotfile_name
+  config.vagrant.host
+  config.vm.auto_port_range
+  config.vm.base_mac
+  config.vm.boot_mode
+  config.vm.box
+  config.vm.box_url
+  config.vm.customize
+  config.vm.define
+  config.vm.forward_port
+  config.vm.guest
+  config.vm.host_name
+  config.vm.network
+  config.vm.provision
+  config.vm.share_folder
+end  
